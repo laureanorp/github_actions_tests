@@ -14,4 +14,4 @@ jobs:
         with:
           dirtyLabel: "conflicts"
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          commentOnDirty: "This PR has conflicts, please fix them before so it can be reviewed/merged."
+          commentOnDirty: "This PR has conflicts, please fix them so it can be reviewed/merged."
