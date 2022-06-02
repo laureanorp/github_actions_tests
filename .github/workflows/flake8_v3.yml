@@ -1,0 +1,17 @@
+
+name: "Conflicts notifier"
+on:
+  push:
+  pull_request_target:
+    types: [synchronize]
+
+jobs:
+  conflicts-notifier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PRs are dirty
+        uses: eps1lon/actions-label-merge-conflict@releases/2.x
+        with:
+          dirtyLabel: "conflicts"
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          commentOnDirty: "This PR has conflicts, please fix them before so it can be reviewed/merged."
