@@ -13,5 +13,6 @@ jobs:
         uses: eps1lon/actions-label-merge-conflict@releases/2.x
         with:
           dirtyLabel: "conflicts"
+          removeOnDirtyLabel: "ready-to-review"
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           commentOnDirty: "This PR has conflicts, please fix them so it can be reviewed/merged."
