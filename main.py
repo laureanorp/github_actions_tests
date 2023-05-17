@@ -11,8 +11,7 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    # oh no, a commit in the same line as on your working branch!
-    # maybe we need to push to main again in order to trigger the action?
+# conflictive comment 2
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
